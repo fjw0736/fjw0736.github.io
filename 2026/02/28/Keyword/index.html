@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Python Keyword | Chi's Blog</title><meta name="author" content="Feng"><meta name="copyright" content="Feng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Python 3.12 保留字 (Keywords) 全手册Python 的保留字是编程语言的核心，不能用作变量名或函数名。  1. 逻辑与布尔 (Logical &amp; Boolean)用于处理逻辑判断和真假状态。     关键字 用途 示例     True 布尔真值 is_valid &#x3D; True   False 布尔假值 is_valid &#x3D; False   None 表示空或无 re">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Python Keyword">
+<meta property="og:url" content="https://fjw0736.github.io/2026/02/28/Keyword/index.html">
+<meta property="og:site_name" content="Chi&#39;s Blog">
+<meta property="og:description" content="Python 3.12 保留字 (Keywords) 全手册Python 的保留字是编程语言的核心，不能用作变量名或函数名。  1. 逻辑与布尔 (Logical &amp; Boolean)用于处理逻辑判断和真假状态。     关键字 用途 示例     True 布尔真值 is_valid &#x3D; True   False 布尔假值 is_valid &#x3D; False   None 表示空或无 re">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://fjw0736.github.io/img/Chinatsu.jpg">
+<meta property="article:published_time" content="2026-02-28T09:02:42.000Z">
+<meta property="article:modified_time" content="2026-02-28T09:03:39.748Z">
+<meta property="article:author" content="Feng">
+<meta property="article:tag" content="NCRE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fjw0736.github.io/img/Chinatsu.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://fjw0736.github.io/2026/02/28/Keyword/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python Keyword',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'python'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(/img/background.jpg);"></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Chi's Blog</span></a></span><div id="menus"></div></nav><div id="page-site-info"><h1 id="site-title">Python Keyword</h1></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="Python-3-12-保留字-Keywords-全手册"><a href="#Python-3-12-保留字-Keywords-全手册" class="headerlink" title="Python 3.12 保留字 (Keywords) 全手册"></a>Python 3.12 保留字 (Keywords) 全手册</h1><p>Python 的保留字是编程语言的核心，不能用作变量名或函数名。</p>
+<hr>
+<h2 id="1-逻辑与布尔-Logical-amp-Boolean"><a href="#1-逻辑与布尔-Logical-amp-Boolean" class="headerlink" title="1. 逻辑与布尔 (Logical &amp; Boolean)"></a>1. 逻辑与布尔 (Logical &amp; Boolean)</h2><p>用于处理逻辑判断和真假状态。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">关键字</th>
+<th style="text-align:left">用途</th>
+<th style="text-align:left">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>True</code></td>
+<td style="text-align:left">布尔真值</td>
+<td style="text-align:left"><code>is_valid = True</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>False</code></td>
+<td style="text-align:left">布尔假值</td>
+<td style="text-align:left"><code>is_valid = False</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>None</code></td>
+<td style="text-align:left">表示空或无</td>
+<td style="text-align:left"><code>result = None</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>and</code></td>
+<td style="text-align:left">逻辑与</td>
+<td style="text-align:left"><code>if a and b:</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>or</code></td>
+<td style="text-align:left">逻辑或</td>
+<td style="text-align:left"><code>if a or b:</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>not</code></td>
+<td style="text-align:left">逻辑非</td>
+<td style="text-align:left"><code>if not a:</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="2-流程控制-Control-Flow"><a href="#2-流程控制-Control-Flow" class="headerlink" title="2. 流程控制 (Control Flow)"></a>2. 流程控制 (Control Flow)</h2><p>控制程序的执行顺序和循环。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">关键字</th>
+<th style="text-align:left">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>if</code> / <code>elif</code> / <code>else</code></td>
+<td style="text-align:left">条件分支判断</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>for</code> / <code>in</code></td>
+<td style="text-align:left">序列遍历循环</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>while</code></td>
+<td style="text-align:left">条件触发循环</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>break</code></td>
+<td style="text-align:left">强制退出当前循环</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>continue</code></td>
+<td style="text-align:left">跳过本次循环，进入下一次</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pass</code></td>
+<td style="text-align:left">空语句占位符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>match</code> / <code>case</code></td>
+<td style="text-align:left">模式匹配 (Python 3.10+)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="3-函数与类-Functions-amp-Classes"><a href="#3-函数与类-Functions-amp-Classes" class="headerlink" title="3. 函数与类 (Functions &amp; Classes)"></a>3. 函数与类 (Functions &amp; Classes)</h2><p>构建程序的骨架和作用域。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">关键字</th>
+<th style="text-align:left">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>def</code></td>
+<td style="text-align:left">定义函数或方法</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>return</code></td>
+<td style="text-align:left">函数返回结果</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>lambda</code></td>
+<td style="text-align:left">创建匿名函数</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>yield</code></td>
+<td style="text-align:left">生成器迭代返回值</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>class</code></td>
+<td style="text-align:left">定义类（面向对象）</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is</code></td>
+<td style="text-align:left">判断两个对象是否为同一内存地址</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>del</code></td>
+<td style="text-align:left">删除引用或对象</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="4-变量作用域-Scope"><a href="#4-变量作用域-Scope" class="headerlink" title="4. 变量作用域 (Scope)"></a>4. 变量作用域 (Scope)</h2><p>管理变量在不同层级间的可见性。</p>
+<ul>
+<li><strong><code>global</code></strong>: 声明变量为全局作用域。</li>
+<li><strong><code>nonlocal</code></strong>: 指向外层嵌套函数中的变量。</li>
+</ul>
+<hr>
+<h2 id="5-异常处理-Exception-Handling"><a href="#5-异常处理-Exception-Handling" class="headerlink" title="5. 异常处理 (Exception Handling)"></a>5. 异常处理 (Exception Handling)</h2><p>处理程序运行时可能出现的错误。</p>
+<blockquote>
+<p><strong>结构示例：</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="comment"># 尝试执行的代码</span></span><br><span class="line"><span class="keyword">except</span> Exception:</span><br><span class="line">    <span class="comment"># 出错后的处理</span></span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="comment"># 无论如何都会执行的代码</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><strong><code>raise</code></strong>: 手动抛出异常。</li>
+<li><strong><code>assert</code></strong>: 用于调试的断言（如果条件为假则报错）。</li>
+<li><strong><code>with</code> / <code>as</code></strong>: 上下文管理器（如自动关闭文件）。</li>
+</ul>
+<hr>
+<h2 id="6-模块与异步-Modules-amp-Async"><a href="#6-模块与异步-Modules-amp-Async" class="headerlink" title="6. 模块与异步 (Modules &amp; Async)"></a>6. 模块与异步 (Modules &amp; Async)</h2><p>导入资源及处理并发任务。</p>
+<ul>
+<li><strong><code>import</code> / <code>from</code></strong>: 导入库或模块。</li>
+<li><strong><code>async</code> / <code>await</code></strong>: 协程异步编程关键字。</li>
+</ul>
+<hr>
+<h2 id="💡-快速查询代码"><a href="#💡-快速查询代码" class="headerlink" title="💡 快速查询代码"></a>💡 快速查询代码</h2><p>在 Python 中运行以下代码可实时查看当前版本的关键字：</p>
+<p>```python<br>import keyword<br>print(keyword.kwlist)</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://fjw0736.github.io">Feng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://fjw0736.github.io/2026/02/28/Keyword/">https://fjw0736.github.io/2026/02/28/Keyword/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/NCRE/">NCRE</a></div><div class="post-share"><div class="social-share" data-image="/img/Chinatsu.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav id="pagination"><div class="pagination"></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/02/09/NCRE2/" title="NCRE2_Python易错总结(1)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-09</div><div class="info-item-2">NCRE2_Python易错总结(1)</div></div><div class="info-2"><div class="info-item-1">Python易错知识点1(变量作用域)1234567891011#对于可变变量而言，例如list，dictionary，set#以list为例ls=[1,2,3,4]def func(n):    a=ls    a.append(n)    print(a)#[1,2,3,4,n]func(5)#[1,2,3,4,5]print(ls)#[1,2,3,4,5]#可变变量可认为自带global性质，将其赋值给别的相当于引用，修改引用对象也会修改对象本身 12345678910#对于不可变变量Number，String，Tuple#以Number为例s=10def func(n):    s=0    s+=n    print(s)#nfunc(5)#5print(s)#0#对于不可变变量而言，必须在代码内声明global关键字进行全局引用 Python易错知识点2(dictionary)12345678910111213141516#字典遍历dic=&#123;&quot;1&quot;:&quot;A&quot;,&quot;2&quot;:&quot;B&quot;,&qu...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/Chinatsu.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Feng</div><div class="author-info-description">欢迎来到我的Blog，这里记录了我的学习笔记与生活点滴。</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/fjw0736"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">欢迎来到我的个人博客！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/02/28/Keyword/" title="Python Keyword">Python Keyword</a><time datetime="2026-02-28T09:02:42.000Z" title="Created 2026-02-28 17:02:42">2026-02-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/02/09/NCRE2/" title="NCRE2_Python易错总结(1)">NCRE2_Python易错总结(1)</a><time datetime="2026-02-09T14:53:07.000Z" title="Created 2026-02-09 22:53:07">2026-02-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/25/sizhen/" title="思想道德法治选择题易错点（错题集）">思想道德法治选择题易错点（错题集）</a><time datetime="2026-01-25T13:57:59.000Z" title="Created 2026-01-25 21:57:59">2026-01-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/20/shuli/" title="高数知识点梳理">高数知识点梳理</a><time datetime="2026-01-20T03:52:53.000Z" title="Created 2026-01-20 11:52:53">2026-01-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/20/WHUAM/" title="武汉大学高数试卷">武汉大学高数试卷</a><time datetime="2026-01-20T02:06:16.000Z" title="Created 2026-01-20 10:06:16">2026-01-20</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/test/" style="font-size: 1.1em; color: #999">test</a> <a href="/tags/final-exam/" style="font-size: 1.1em; color: #999">final_exam</a> <a href="/tags/NCRE/" style="font-size: 1.3em; color: #99a1ac">NCRE</a> <a href="/tags/Minecraft/" style="font-size: 1.1em; color: #999">Minecraft</a> <a href="/tags/math/" style="font-size: 1.5em; color: #99a9bf">math</a> <a href="/tags/OralEnglish/" style="font-size: 1.1em; color: #999">OralEnglish</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/02/">
+            <span class="card-archive-list-date">
+              February 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              January 2026
+            </span>
+            <span class="card-archive-list-count">10</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              December 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-02-28T09:03:55.828Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Feng</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
